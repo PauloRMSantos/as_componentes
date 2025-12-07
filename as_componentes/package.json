@@ -11,10 +11,13 @@
     "back": "npx json-server db.json"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.17",
     "json-server": "^1.0.0-beta.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "tailwind": "^4.0.0"
+    "react-router-dom": "^7.9.6",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

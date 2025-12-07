@@ -4,3 +4,11 @@
 * {
     font-family: 'Comic Neue';
 }
+
+img{
+    opacity: 0.0;
+}
+
+img:hover{
+    opacity: 1.0;
+}

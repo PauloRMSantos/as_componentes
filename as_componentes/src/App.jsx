@@ -5,6 +5,9 @@ import { HomePage } from './pages/HomePage'
 import NotFound from './pages/NotFoundPage'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { ContactPage } from './pages/ContactPage'
+import { SeeMorePage } from "./pages/SeeMorePage"
+import { NewProductPage } from './pages/NewProductPage'
+import { EditProductPage } from './pages/EditProductPage'
 
 
 function App() {
@@ -15,10 +18,10 @@ function App() {
         <Route path='/' element={<MainLayout />}>
           <Route path='/' element={<HomePage />}/>
           <Route path='/contact' element={<ContactPage />}/>
-          {/* <Route path='/sobre/:id' element={<SobrePage />}/> */}
+          <Route path='/products/:id' element={<SeeMorePage />}/>
           <Route path='/products' element={<ProductsListPage />}/>
-          {/* <Route path='/produtos/form' element={<FormProdutoPage />}/> */}
-          {/* <Route path='/produtos/form/:id' element={<FormProdutoPage />}/> */}
+          <Route path='/products/new' element={<NewProductPage />}/>
+          <Route path='/products/edit/:id' element={<EditProductPage />}/>
         </Route>
         <Route path='*' element={<NotFound />}/>
 
